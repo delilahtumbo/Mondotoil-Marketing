@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!--Declares the document type as HTML5.-->
+<html> <!--The opening tag for the HTML document.-->
+
+<head> <!-- The head section of the HTML document, which contains metadata and links to external resources.-->
+	<title>Login Form</title> <!--Sets the title of the web page to "Login Form."-->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!--Links an external CSS file named "style.css" to style the page.-->
+</head> 
+<body> 
+	<style>
+        body
+		{    
+            color: rgb(4, 4, 4);
+        }
+		</style>
+	<div class="container" style="background-color:rgb(233, 235, 241) ;" > 
+		<h1>Login Form</h1> <!--Displays a heading "Login Form."-->
+		<form method="post" action="login.php"> <!--Starts a form with the HTTP method set to "post" and the action attribute pointing to "login.php," indicating where the form data will be submitted.-->
+			<label for="username">Username:</label> <!--Labels the input field for the username.--> 
+			<input type="text" id="username" name="username" required> <!--Creates an input field for the username, with an ID and a "required" attribute, which means the user must fill it out.-->
+
+			<label for="password">Password:</label> <!--Labels the input field for the password.-->
+			<input type="password"id="password" name="password" required> <!--Creates a password input field, which hides the entered characters, with an ID and a "required" attribute.--> 
+			<input type="submit" value="Login"> <!--Creates a submit button to submit the form data.-->
+		</form> <!--Closes the form.-->
+		<br><br> 
+		<!-- Displays a message and a hyperlink for users who do not have an account. Clicking the link will take them to the "register.html" page.-->
+		<p> Does not have an account? 
+			<a href="register.html">Click Here</a> 
+		</p> 
+	</div> 
+</body> 
+</html>
